@@ -1,17 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Boom</title>
+    <style>
+      .diskremover {
+        list-style-type: none;
+      }
+      .navcontainer{
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navcontainer">
+        <ul class="diskremover">
+          <li><a href="./index.html" id="home">Home </a></li>
+          <li><a href="./about.html" id="about">About </a></li>
+          <li><a href="./health_contact.html" id="contact">Contact Us </a></li>
+          <li>
+            <input
+              type="text"
+              id="conditionInput"
+              placeholder="Enter a Destination or Keyword"
+            />
+          </li>
+          <li><button id="btnSearch">Search</button></li>
+          <li><button id="btnClear">Clear</button></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Boom</title>
-</head>
-<body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(pexels-apasaric-325193.jpg);
+        background-size: cover;
+      }
+      nav {
+        background-color:#191c19;
+        padding: 10px;
+        color: WHITE;
+        margin-top: -19px
+      }
+      .diskremover {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+      .green{
+        background-color: white;
+        padding: 1.5% 2cm ;
+        border: 2px solid rgb(219, 212, 212);
+        border-radius:  15px;
+      }
+      .navcontainer {
+        /* background-color: #405a40;
+        color: white; */
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navcontainer a {
+        text-decoration: none;
+        color: #d6d0d0;
+        font-size: 16px;
+      }
+      .navcontainer a:hover {
+        color: #007bff;
+      }
+      #conditionInput {
+        padding: 5px;
+        font-size: 14px;
+        border: 3px solid green;
+        border-radius: 11px;
+      }
+      button {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 11px;
+      }
+      @media (max-width: 768px) {
+        .diskremover {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      .heading{
+        font-family: cursive;
+      }
+      .social{
+        width: 5%;
+        height: 100%;
+        margin-left:3px ;
+        background-color: rgb(45, 128, 104);
+        padding-top: 180px;
+        padding-bottom:150px ;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:start;
+      }
+      .social img{
+        /* padding: 0; */
+        height: 30px;
+        width: 30px;
+        padding-bottom: 25%;
+      }
+      .bodycomplete{
+        display: flex;
+        flex-direction: row;
+      }
+      .content{
+        width: 380px;
+        margin-top: 70px;
+        margin-left: 120px;
+        display: flex;
+        flex-direction:column;
+        color: white;
+      }
+      .header{
+        font-weight: 1400;
+        font-size:x-large;
+      }
+      .content .Booknow{
+          width: 130px;
+          padding: 10px;
+      }
+      /* .topic{
+
+      } */
+    </style>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li>
-                
-            </li>
+      <div class="navcontainer">
+        <ul class="diskremover">
+          <li>
+            <img
+              style="height: 59px; width: 60px"
+              src="fligt_img.png"
+              alt=""
+            />
+          </li>
+          <h2 class="heading">
+            Travel Boom
+          </h2>
         </ul>
-    </nav>
-</body>
+        <ul class="diskremover">
+          <li><a href="./index.html" id="home" aria-label="Home">Home</a></li>
+          <li>
+            <a href="./about.html" id="about" aria-label="About">About</a>
+          </li>
+          <li>
+            <a href="./health_contact.html" id="contact" aria-label="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <ul class="diskremover green">
+          <li>
+            <input
+              type="text"
+              id="conditionInput"
+              placeholder="Enter a Destination"
+              aria-label="Search"
+            />
+          </li>
+          <li><button id="btnSearch">Search</button></li>
+          <li><button id="btnClear">Clear</button></li>
+        </ul>
+     </nav> </div>
+      <div class="bodycomplete">
+         <div class="social">
+        <img src="instagram_733614.png" alt="">
+        <img src="facebook_1384005.png" alt="">
+        <img src="youtube_4494485.png" alt="">
+      </div>
+      <div class="content">
+          <div class="header">
+              <h1>EXPLORE DREAM DESTINATION</h1>
+          </div>
+          <div class="topic">
+             <H3>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination</H3>
+          </div>
+          <button class="Booknow"> Book now</button>
+      </div>
+      </div>
+   
+  </body>
 </html>
