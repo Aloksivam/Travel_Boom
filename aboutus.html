@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(pexels-apasaric-325193.jpg);
+        background-size: cover;
+      }
+      nav {
+        background-color: #191c19;
+        padding: 10px;
+        color: WHITE;
+        margin-top: 0px;
+      }
+      .diskremover {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+      .green {
+        background-color: white;
+        padding: 1.5% 2cm;
+        border: 2px solid rgb(219, 212, 212);
+        border-radius: 25px;
+      }
+      .navcontainer {
+        /* background-color: #405a40;
+        color: white; */
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navcontainer a {
+        text-decoration: none;
+        color: #d6d0d0;
+        font-size: 16px;
+      }
+      .navcontainer a:hover {
+        color: #007bff;
+      }
+      #conditionInput {
+        padding: 5px;
+        font-size: 14px;
+        border: 3px solid green;
+        border-radius: 11px;
+      }
+      button {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 11px;
+      }
+      @media (max-width: 768px) {
+        .diskremover {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      .heading {
+        font-family: cursive;
+      }
+      .social {
+        width: 5%;
+        height: 100%;
+        margin-left: 3px;
+        background-color: rgb(45, 128, 104);
+        padding-top: 220px;
+        padding-bottom: 220px;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
+      .social img,
+      .card img {
+        /* padding: 0; */
+        height: 30px;
+        width: 30px;
+        padding-bottom: 25%;
+      }
+      .social img{
+        padding-right: 15px;
+      }
+      .bodycomplete {
+        display: flex;
+        flex-direction: row;
+      }
+      .content {
+        /* width: 380px; */
+        margin-top: 70px;
+        margin-left: 110px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
+      .header {
+        font-weight: 1400;
+        font-size: x-large;
+      }
+      .content .Booknow {
+        width: 130px;
+        padding: 10px;
+      }
+      .ourTeam {
+        display: flex;
+        flex-direction: row;
+      }
+      .card {
+        border-radius: 14px;
+        margin-left: 14px;
+        display: flex;
+        flex-direction: row;
+        border: 4px solid #800042;
+        background-color: rgba(35, 37, 35, 0.7);
+        height: 170px;
+      }
+      /* .topic{
+
+      } */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navcontainer">
+        <ul class="diskremover">
+          <li>
+            <img style="height: 59px; width: 60px" src="fligt_img.png" alt="" />
+          </li>
+          <h2 class="heading">Travel Boom</h2>
+        </ul>
+        <ul class="diskremover">
+          <li><a href="./travel_recommendation.html" id="home" aria-label="Home">Home</a></li>
+          <li>
+            <a href="./aboutus.html" id="about" aria-label="About">About Us</a>
+          </li>
+          <li>
+            <a href="./contact_us.html" id="contact" aria-label="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <ul class="diskremover green">
+          <li>
+            <input
+              type="text"
+              id="conditionInput"
+              placeholder="Enter a Destination"
+              aria-label="Search"
+            />
+          </li>
+          <li><button id="btnSearch">Search</button></li>
+          <li><button id="btnClear">Clear</button></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bodycomplete">
+      <div class="social">
+        <img src="instagram_733614.png" alt="" />
+        <img src="facebook_1384005.png" alt="" />
+        <img src="youtube_4494485.png" alt="" />
+      </div>
+      <div class="content">
+        <div class="header">
+          <h1>ABOUT US</h1>
+        </div>
+        <div class="details">
+          <h3>
+            Welcome to Our Company! We are a team of passionate individuals
+            dedicated to providing excellent services/products to our customers.
+            Our mission is to provide the best experience for people travelling
+            to different destinations around the world. Our values include
+            integrity, innovation, customer satisfaction and teamwork. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque
+            similique eveniet iste repellendus tempore excepturi, odit debitis
+            aut distinctio nam vitae recusandae aspernatur? Accusamus
+            necessitatibus porro assumenda eius est deleniti labore fugit, quis
+            velit neque iste magnam dignissimos aliquid natus minima, totam
+            voluptatum incidunt!
+          </h3>
+        </div>
+        <div class="ourTeam">
+          <div class="header">
+            <h1>Our Team</h1>
+          </div>
+          <div class="card">
+            <div class="profilepic">
+              <img src="man.png" alt="" />
+            </div>
+            <div class="persondetail">
+              <h4>John Doe</h4>
+              <h4>
+                Role Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus fugit sapiente odio.
+              </h4>
+              <button>CEO</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profilepic">
+              <img src="man.png" alt="" />
+            </div>
+            <div class="persondetail">
+              <h4>John Doe</h4>
+              <h4>
+                Role Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus fugit sapiente odio.
+              </h4>
+              <button>TEAM LEAD</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profilepic">
+              <img src="man.png" alt="" />
+            </div>
+            <div class="persondetail">
+              <h4>John Doe</h4>
+              <h4>
+                Role Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus fugit sapiente odio.
+              </h4>
+              <button>DELIVERY PARTNER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
